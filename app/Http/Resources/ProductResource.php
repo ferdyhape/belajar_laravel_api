@@ -18,7 +18,7 @@ class ProductResource extends JsonResource
         // return parent::toArray($request);
         return [
             'Nama' => $this->name,
-            'Kategori' => $this->category_id // display relationship data
+            'Kategori' => $this->category->name // display relationship data
         ];
     }
 }
